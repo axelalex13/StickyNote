@@ -1,0 +1,27 @@
+<table  id="add-note">
+        <tbody class="notes">
+            <div>
+              <br>
+              <tr>
+                <td id="tabSticky" class="table1" >
+                       <ul>
+		                      	<li>
+					                       <a class="nounderline">
+                                   
+						                    	  <p>Titlu: <input class="form-control1 " id="form" ng-model="note.title" maxlength="30"></p>
+                                     <p > Nota: <textarea class="form-control" id="form1" rows="3"  ng-model="note.text" maxlength="120" ></textarea></p>
+                                     <p> Autor: <input class="form-control1" id="form"  ng-model="note.autor" maxlength="30" ></p>
+                                  </a>
+			                       </li>
+	                  	</ul>
+                  </td>
+            </tr>
+          </div>
+        </tbody>
+ </table>
+   <br>
+   <div class="butoane">
+      <p> <button class="btn btn-primary btn-lg" ng-click="addNote()" id="add-btn">Add note</button></p>
+        <button class="btn btn-info" ng-click="clear()" >Clear</button>
+        <a ui-sref="all" class="btn btn-info">Cancel</a>
+    </div>

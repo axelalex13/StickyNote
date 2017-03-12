@@ -1,0 +1,24 @@
+    <h1>DETAILS</h1>
+    <div id="back"><a ui-sref="all" class="btn btn-primary btn-lg">Back</a></div>
+    <div id="details">
+    <br>
+    <div id="newpost">
+    <h3> Titlu: {{notelist.title}}</h3>
+    <h3> Nota:  {{notelist.text}}</h3>
+    <h3> Autor: {{notelist.autor}}</h3>
+    
+   <h3> <i class="fa fa-clock-o" aria-hidden="true"></i>  {{notelist.dateAdded}}</h3>
+    <input class="btn btn-info" type="button" name="answer" value="EDIT" onclick="showDiv(); showhide();" />
+    <button class="fa fa-trash-o fa-lg" ng-click="remove(notelist._id)">Delete</button>
+    </div>
+    <div id="welcomeDiv"  style="display:none;">
+    <h3>Titlu:<input class="form-control1"  ng-model="notelist.title"></h3>
+    <h3>Nota:<textarea class="form-control1 " rows="3"  ng-model="notelist.text" ></textarea></h3>
+   <button class="btn btn-info" ng-click="update()">Update</button>
+   <button class="fa fa-trash-o fa-lg" ng-click="remove(notelist._id)">Delete</button>
+  </div> 
+  
+
+
+
+   
